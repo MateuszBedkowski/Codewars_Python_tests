@@ -1,4 +1,5 @@
 # Codewars_Python_tests
+<<<<<<< HEAD
 <P1>Tests for python codewars solution
 
 	import unittest
@@ -37,3 +38,5 @@
 	
 	if __name__ == '__main__':
 	    unittest.main(testRunner=unittest.TextTestRunner(resultclass=CustomTextTestResult))
+=======
+>>>>>>> d09893b (first commit)
