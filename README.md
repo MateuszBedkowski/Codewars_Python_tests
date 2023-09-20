@@ -5,6 +5,7 @@ import unittest
 from solution import dodawanie
 
 #Standard output
+----------------------------------------------------
 class CustomTextTestResult(unittest.TextTestResult):
     def addSuccess(self, test):
         super().addSuccess(test)
@@ -17,7 +18,7 @@ class CustomTextTestResult(unittest.TextTestResult):
         self.stream.writeln(f'Test {test_name}: Failed')
 
 #Actual tests
-
+---------------------------------------------
 class TestYourCode(unittest.TestCase):
     def test_dodawanie_2_plus_3(self):
         self.assertEqual(dodawanie(2, 3), 5)
