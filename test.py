@@ -5,13 +5,13 @@ from solution import factorial
 class CustomTextTestResult(unittest.TextTestResult):
     def addSuccess(self, test):
         super().addSuccess(test)
-        test_name = test._testMethodName.replace('test_', '')
-        self.stream.writeln(f'Test {test_name}: Passed')
+        test_name = test._testMethodName.replace('test_', 'Test ')
+        self.stream.writeln(f'{test_name}: Passed')
 
     def addFailure(self, test, err):
         super().addFailure(test, err)
-        test_name = test._testMethodName.replace('test_', '')
-        self.stream.writeln(f'Test {test_name}: Failed')
+        test_name = test._testMethodName.replace('test_', 'Test ')
+        self.stream.writeln(f'{test_name}: Failed')
 
 #Actual tests
 class TestYourCode(unittest.TestCase):
