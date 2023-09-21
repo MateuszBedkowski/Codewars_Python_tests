@@ -1,2 +1,4 @@
-def dodawanie(a,b):
-    return a + b
+import math
+
+def factorial(n):
+    return math.factorial(n)
